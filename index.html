@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="shade">
+        <h1 id="title">Anime Survey Form</h1>
+        <p id="description" class="description text-center">
+            Thank you for taking the time to help us know more about your taste in anime.</p>
+        <form class="menu" id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+        <fieldset>
+            <label for="name">Enter Your First Name: <input id="name" name="first-name" type="text" placeholder="First Name" required /></label>
+            <label id="name-label" for="name-label">Enter Your Last Name: <input id="name-label" name="last-name" type="text" placeholder="Last Name" required /></label>
+            <label id="email-label" for="email">Enter Your Email: <input id="email" name="email" type="email" placeholder="Your Email" required /></label>
+            <label for="country">Which country do you currently live in: <input id="country" name="country" type="text" required placeholder="country" /></label>
+            <label id="number-label" for="number">Input your age (years): <input id="number" type="number" name="age" min="13" max="120" placeholder="age(13-120)" /></label>
+        </fieldset>
+        <fieldset>
+            <label for="Best-anime">In your opinion, what is the BEST ANIME of all time? (movies included) <input id="Best-anime" type="text" name="text" required /></label>
+            <label for="Worst-anime">In your opinion, what is the WORST ANIME of all time? (movies included) <input id="Best-anime" type="text" name="text" required /></label><label for="Best-anime">In your opinion, what is the most OVERRATED ANIME of all time? (movies included) <input id="Best-anime" type="text" name="text" required /></label>
+            <label for="Best-anime">In your opinion, what is the most UNDERRATED ANIME of all time? (movies included) <input id="Best-anime" type="text" name="text" required /></label>
+        </fieldset>
+        <fieldset>
+            <label for="preferred">What is your preferred way to consume Japanese media?
+            <select id="preferred" name="preferred">
+                <option value="">(select one)</option>
+                <option value="1">Anime</option>
+                <option value="2">Music</option>
+                <option value="3">Manga</option>
+                <option value="4">Visual Novels</option>
+                <option value="5">Video games (JRPGs, etc)</option>
+                <option value="6">Novels</option>
+                <option value="7">Movies</option>
+            </select>
+            </label>
+            <label for="dropdown">How do you watch your anime?
+            <select id="dropdown" name="medium">
+                <option value="">(select one)</option>
+                <option value="1">Streaming</option>
+                <option value="2">Theater</option>
+                <option value="3">Blu-ray</option>
+            </select>
+            </label>
+            <label for="no-of-anime">How many anime series have you consumed in your lifetime?
+            <select id="no-of-anime" name="no-of-anime">
+                <option value="">(select one)</option>
+                <option value="1">Less than 10</option>
+                <option value="2">10 - 25 series/movies</option>
+                <option value="3">25 - 50 series/movies</option>
+                <option value="4">50 - 100 series/movies</option>
+                <option value="5">200 - 500 series/movies</option>
+                <option value="6">500 - 1,000 series/movies</option>
+                <option value="7">More than 1,000 series/movies</option>
+            </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Do you use piracy websites (required)</legend>
+            <label for="yes">
+                <input id="yes" value="0" type="radio" name="usage" class="inline" checked /> Yes
+            </label>
+            <label for="no">
+                <input id="no" type="radio" value="1" name="usage" class="inline" /> No
+            </label>
+            <label for="cant">
+                <input id="cant" type="radio" value="2" name="usage" class="inline" /> Can't tell
+            </label>
+            <label for="reason">Your reason for doing so:
+                <textarea id="reason" name="reason" rows="3" cols="30" placeholder="Don't have enough money"></textarea>
+            </label>
+        </fieldset>
+        <label for="truth">
+            <input class="inline" value="0" id="truth" type="checkbox" required name="truth" />You have answered the questions hounestly.
+        </label>
+        <label>
+            <input class="inline" value="1" id="policy" type="checkbox" required name="truth" />You agree with our privacy policy.
+        </label>
+        <input id="submit" type="submit" value="Submit" />
+        </form>
+      </div>
+  </body>
